@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Lb&apos; to &apos;Clase12&apos;&#x0D;&#x0A;- Original project: &apos;ControlGastos&apos;&#x0D;&#x0A;- Destination element: &apos;Clase12&apos;&#x0D;&#x0A;- Original element: &apos;Lb&apos;" description="Copy folder" element1="Lb" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1587083968014" target="/Clase12" units="0" version="1.0"/>
+</session>

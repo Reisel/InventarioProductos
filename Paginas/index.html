@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+
+<link rel="stylesheet" type="text/css" href="../Librerias/bootstrap-4.4.1-dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../Librerias/adamwdraper-Numeral-js-7de892f/min/numeral.min.js">
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+<style>
+    ion-icon {
+        --ionicon-stroke-width: 50px;
+}
+</style>
+
+<!--<link rel="stylesheet" type="text/css" href="../Librerias/estilos.css">-->
+
+<!--<link rel="stylesheet" type="text/css" href="../Librerias/alertifyjs/css/alertify.css">-->
+<!--<link rel="stylesheet" type="text/css" href="../Librerias/alertifyjs/css/themes/default.css">-->
+    
+
+<!--    <script src="../Librerias/jquery-3.5.0.min.js"></script>-->
+<!--    <script src="../Librerias/bootstrap-4.4.1-dist/js/bootstrap.js"></script>-->
+<!--    <script src="../Librerias/alertifyjs/alertify.js"></script>-->
+
+</head>
+<body>
+<form method="post" action="#">
+    <div class="container">
+        <table id="tabla" class="table table-sm table-hover table-condensed table-bordered">
+            <thead>
+            <tr>
+                <td>Fecha</td>
+                <td>Codigo</td>
+                <td>Lugar</td>
+                <td>Categoria</td>
+                <td>Marca</td>
+                <td>Nombre</td>
+                <td>Und</td>
+                <td>Cant</td>
+                <td>Precio</td>
+                <td>Total</td>
+                <td>Accion</td>
+            </tr>
+            </thead>
+            <tbody id="content_table">
+<!--            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button><ion-icon name="pencil-outline" size="small"></ion-icon></button>
+                    <button><ion-icon name="trash-outline" size="small"></ion-icon></button>
+                </td>
+                </tr>         -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <label for="colFormLabel" class="col-sm-1 col-form-label">Total:</label>
+        <label for="colFormLabel" class="col-sm-1 col-form-label" id="total-total">0</label>
+     <!--   <input class="form-control" type="text" name="codigo" id="total-total" value=0 placeholder="Codigo" />-->
+    </div>
+    <br>
+    <div class="container">
+        <div class="form-row">
+
+        <div class="col-md-2 mb-3">
+            <label for="validationCustom01">Fecha</label>
+            <input class="form-control" type="date" name="fecha" id="fecha" value="" placeholder="Fecha" />
+        </div>
+        <div class="col-md-1 mb-3">
+            <label for="validationCustom01">Codigo</label>
+            <input class="form-control" type="text" name="codigo" id="codigo" value="" placeholder="Codigo" />
+        </div>
+        <div class="col-md-1 mb-3">
+            <label for="validationCustom01">Lugar</label>
+            <input class="form-control" type="text" name="lugar" id="lugar" value="" placeholder="Lugar"/>
+        </div>
+        <div class="col-md-1 mb-3">
+            <label for="validationCustom01">Categoria</label>
+            <input class="form-control" type="text" name="categoria" id="categoria" value="" placeholder="Categoria"/>
+        </div>
+        <div class="col-md-1 mb-3">
+            <label for="validationCustom01">Marca</label>
+            <input class="form-control" type="text" name="marca" id="marca" value="" placeholder="Marca"/>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationCustom01">Nombre</label>
+            <input class="form-control" type="text" name="nombre" id="nombre" value="" placeholder="Nombre"/>
+        </div>
+        <div class="col-md-1 mb-3">
+            <label for="validationCustom01">UND</label>
+            <input class="form-control" type="text" name="und" id="und" value="" placeholder="UND"/>
+        </div>
+        <div class="col-md-1 mb-3">
+            <label for="validationCustom01">Cant</label>
+            <input class="form-control" type="text" name="cant" id="cant" value="" placeholder="Cant"/>
+        </div>
+        <div class="col-md-1 mb-3">
+            <label for="validationCustom01">Precio</label>
+            <input class="form-control" type="text" name="precio" id="precio" value="" placeholder="Precio"/>
+        </div>
+        <div class="mx-auto" style="width: 200px;">
+            <input type="button" value="Agregar" class="btn btn-outline-success" id="add_row"/>
+            <input type="button" value="Enviar" class="btn btn-outline-success" id="enviar"/>
+        </div>				
+    </div>	
+    </div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="tabla.js"></script>
+<script src="tablaDAO.js"></script>
+</body>
+</html>

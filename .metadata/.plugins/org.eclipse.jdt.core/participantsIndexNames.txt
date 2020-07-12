@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\REISEL\Documents\02 CURSOS\02 EDUCATION IT\Proyectos\Control Gastos\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2817285427.index
+\jse-Lab-11- Integrador\src\main\java
+C:\Users\REISEL\Documents\02 CURSOS\02 EDUCATION IT\Proyectos\Control Gastos\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1072166160.index
+\Web_de_Productos\src
