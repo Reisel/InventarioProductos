@@ -7,16 +7,17 @@
 
 <link rel="stylesheet" type="text/css" href="../Librerias/bootstrap-4.4.1-dist/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../Librerias/adamwdraper-Numeral-js-7de892f/min/numeral.min.js">
+<link rel="stylesheet" href="style.css" />
 
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
-<style>
+<!--<style>
     ion-icon {
         --ionicon-stroke-width: 50px;
-}
-</style>
+    }
+</style>-->
 
 <!--<link rel="stylesheet" type="text/css" href="../Librerias/estilos.css">-->
 
@@ -31,53 +32,11 @@
 </head>
 <body>
 <form method="post" action="#">
+    
+    <!--CUADRO QUE DE COMPLETACIÓN-->
     <div class="container">
-        <table id="tabla" class="table table-sm table-hover table-condensed table-bordered">
-            <thead>
-            <tr>
-                <td>Fecha</td>
-                <td>Codigo</td>
-                <td>Lugar</td>
-                <td>Categoria</td>
-                <td>Marca</td>
-                <td>Nombre</td>
-                <td>Und</td>
-                <td>Cant</td>
-                <td>Precio</td>
-                <td>Total</td>
-                <td>Accion</td>
-            </tr>
-            </thead>
-            <tbody id="content_table">
-<!--            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                    <button><ion-icon name="pencil-outline" size="small"></ion-icon></button>
-                    <button><ion-icon name="trash-outline" size="small"></ion-icon></button>
-                </td>
-                </tr>         -->
-            </tbody>
-        </table>
-    </div>
-
-    <div class="container">
-        <label for="colFormLabel" class="col-sm-1 col-form-label">Total:</label>
-        <label for="colFormLabel" class="col-sm-1 col-form-label" id="total-total">0</label>
-     <!--   <input class="form-control" type="text" name="codigo" id="total-total" value=0 placeholder="Codigo" />-->
-    </div>
-    <br>
-    <div class="container">
+        <br>
         <div class="form-row">
-
         <div class="col-md-2 mb-3">
             <label for="validationCustom01">Fecha</label>
             <input class="form-control" type="date" name="fecha" id="fecha" value="" placeholder="Fecha" />
@@ -118,7 +77,56 @@
             <input type="button" value="Agregar" class="btn btn-outline-success" id="add_row"/>
             <input type="button" value="Enviar" class="btn btn-outline-success" id="enviar"/>
         </div>				
-    </div>	
+    </div>
+     <!--FIN--CUADRO QUE DE COMPLETACIÓN-->
+     <!--CUADRO QUE RECIBE-->
+     <br>
+    <div class="container container-table-fidex">
+        <table id="tabla" class="table table-sm table-hover table-condensed table-bordered table-fidex">
+            <thead>
+                <tr>
+                <th>Fecha</th>
+                <th>Codigo</th>
+                <th>Lugar</th>
+                <th>Categoria</th>
+                <th>Marca</th>
+                <th>Nombre</th>
+                <th>Und</th>
+                <th>Cant</th>
+                <th>Precio</th>
+                <th>Total</th>
+                <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody id="content_table">
+<!--            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button><ion-icon name="pencil-outline" size="small"></ion-icon></button>
+                    <button><ion-icon name="trash-outline" size="small"></ion-icon></button>
+                </td>
+                </tr>         -->
+            </tbody>
+        </table>
+    </div>
+    <!--FIN--CUADRO QUE RECIBE-->
+        <!--CUADRO QUE LLEVA LA SUMA-->
+    <div class="container">
+        <label for="colFormLabel" class="col-sm-1 col-form-label">Total:</label>
+        <label for="colFormLabel" class="col-sm-1 col-form-label" id="total-total">0</label>
+        <!--   <input class="form-control" type="text" name="codigo" id="total-total" value=0 placeholder="Codigo" />-->
+    </div>
+    <br>
+        <!--FIN--CUADRO QUE LLEVA LA SUMA-->
     </div>
 </form>
 

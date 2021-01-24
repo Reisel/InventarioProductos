@@ -18,7 +18,7 @@ public class CompraAlimentoDAO {
 					  Producto producto = new Producto();
 					  producto = bolsa.next();
 					  con.getConnection().setAutoCommit(false); // Garantizar Transaccion
-					  String sql = "insert into compra_alimentos (Fecha, mes, codigo, lugar, categoria, marca, descripcion, und, Cant, Precio, Total)" + 
+					  String sql = "insert into compra_alimentos (fecha, mes, codigo, lugar, categoria, marca, descripcion, und, Cant, precio, total)" + 
 					  		"values (?,?,?,?,?,?,?,?,?,?,?);";
 					  PreparedStatement st = null;
 					  st = con.getConnection().prepareStatement(sql);
